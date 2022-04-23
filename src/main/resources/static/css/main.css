@@ -17,7 +17,6 @@ body {
     font-size: 1rem;
     line-height: 1.58;
     color: #333;
-    /*  background-color: #f4f4f4; */
     height: 100%;
 
 
@@ -34,7 +33,6 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-   /* background: maxresdefault.jpg;*/
     content: "";
     z-index: 0;
 }
@@ -58,6 +56,10 @@ body:before {
 
 .form-group {
     margin-bottom: 15px;
+}
+
+.input-group{
+	display: flex;
 }
 
 input {
@@ -155,6 +157,11 @@ button.accent {
     height: calc(100% - 60px);
     max-height: 600px;
     position: relative;
+    border-radius: 5px;
+}
+
+.chat-header {
+	text-align: center;
 }
 
 #chat-page ul {
@@ -223,4 +230,10 @@ button.accent {
 
 #chat-page .chat-message p {
     color: #43464b;
+}
+
+@media(max-width: 414px){
+	.chat-container{
+		margin-top: -17px;
+	}
 }
